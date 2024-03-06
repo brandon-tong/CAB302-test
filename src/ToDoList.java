@@ -89,7 +89,11 @@ public class ToDoList {
         System.out.print("Enter the description of the item: ");
         Scanner scanner = new Scanner(System.in);
         String description = scanner.nextLine();
-        // TODO Now: Call the add(ToDoItem item) method of the user's to-do items list to add a new item
+        // Create a new ToDoItem with the description and mark it as not done initially
+        ToDoItem newItem = new ToDoItem(description, false);
+        // Add the new item to the user's to-do items list
+        user.getToDoItems().add(newItem);
+        System.out.println("Item added successfully!");
     }
 
     /**

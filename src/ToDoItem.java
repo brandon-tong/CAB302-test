@@ -4,12 +4,13 @@ public class ToDoItem {
 
     public ToDoItem(String description, boolean isDone) {
         this.description = description;
-        this.isDone = false;
+        this.isDone = isDone;
     }
 
     public String getDescription() {
         return description;
     }
+
     public boolean isDone() {
         return isDone;
     }
